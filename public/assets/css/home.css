@@ -1,0 +1,439 @@
+:root {
+    --primary-color: #1A237E;
+    --secondary-color: #dc3545;
+    --text-blue: #1A237E;
+    --blue: #1A237E;
+    --light-blue: #E8EAF6;
+    --text-orange: #FF9800;
+    --orange: #FF9800;
+    --light-orange: #FFF3E0;
+    --text-green: #4CAF50;
+    --green: #4CAF50;
+    --light-green: #E8F5E9;
+    --text-purple: #9C27B0;
+    --purple: #9C27B0;
+    --light-purple: #F3E5F5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.top-bar a {
+    transition: opacity 0.3s ease;
+}
+
+.top-bar a:hover {
+    opacity: 0.8;
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand.brand-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover {
+    color: #3949ab !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #1A237E, #0d163e);
+    padding: 60px 0;
+    min-height: 65vh; /* Adjust this value as needed */
+    display: flex;
+    align-items: center;
+}
+
+/* Dashboard Styles */
+.dashboard-area {
+    background-color: #f5f7fa;
+    padding: 30px 0;
+}
+
+.dashboard-header h2 {
+    color: var(--text-blue);
+    margin-bottom: 5px;
+}
+
+.text-navy {
+    color: var(--text-blue);
+}
+
+.text-blue {
+    color: var(--text-blue);
+}
+
+.text-orange {
+    color: var(--text-orange);
+}
+
+.text-green {
+    color: var(--text-green);
+}
+
+.text-purple {
+    color: var(--text-purple);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-light-orange {
+    background-color: var(--light-orange);
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.dashboard-card {
+    border-radius: 16px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon-circle i {
+    font-size: 24px;
+}
+
+.rounded-4 {
+    border-radius: 16px !important;
+}
+
+.edit-link {
+    color: #adb5bd;
+    transition: color 0.2s ease;
+}
+
+.edit-link:hover {
+    color: var(--text-blue);
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.booking-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Badge styles */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.bg-success-subtle {
+    background-color: rgba(76, 175, 80, 0.15);
+}
+
+/* Table styles */
+.table th {
+    font-weight: 500;
+    color: #6c757d;
+    border-top: none;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 1rem 0.75rem;
+}
+
+/* Button styles */
+.btn-danger {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-dark {
+    color: #343a40;
+    border-color: #dee2e6;
+}
+
+.btn-outline-dark:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #dee2e6;
+}
+
+/* Section Titles */
+.section-title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Services */
+.services-section {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon i {
+    color: #007bff; /* Match button blue */
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Products */
+.products-section {
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+/* Contact Form */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(26, 35, 126, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #151d69;
+    border-color: #151d69;
+}
+
+.footer {
+    background-color: #121212; /* Darker footer background */
+}
+
+.footer .form-control::placeholder {
+    color: #aaa;
+}
+
+/* Container adjustments for larger screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1840px;
+    }
+    
+    /* Larger font sizes for extra large screens */
+    .dashboard-header h2 {
+        font-size: 2.5rem;
+    }
+    
+    .dashboard-header p {
+        font-size: 1.2rem;
+    }
+    
+    /* Increased spacing */
+    .dashboard-area {
+        padding: 40px 0;
+    }
+}
+
+/* Card grid adjustments for larger screens */
+@media (min-width: 1400px) {
+    /* Stats cards - show more cards in a row on larger screens */
+    .dashboard-card {
+        min-height: 220px;
+    }
+    
+    .dashboard-card .display-4 {
+        font-size: 3.2rem;
+    }
+    
+    .icon-circle {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .icon-circle i {
+        font-size: 28px;
+    }
+}
+
+/* Table improvements for larger screens */
+@media (min-width: 1400px) {
+    .table th {
+        font-size: 1rem;
+    }
+    
+    .table td {
+        font-size: 1.05rem;
+        padding: 1.2rem 0.75rem;
+    }
+    
+    /* More space in the table view */
+    .table-responsive {
+        overflow-x: visible;
+    }
+}
+
+/* Better card layouts for larger screens */
+@media (min-width: 1600px) {
+    /* Adjust personal info and bookings layout */
+    .booking-item {
+        padding: 1.5rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    /* Add max-height to ensure scrollable content on very tall screens */
+    .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Flexible grid for xl and xxl screens */
+@media (min-width: 1400px) {
+    /* Better stats card grid */
+    .row.g-4 .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    /* Service history spacing */
+    .table-responsive {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Fix for ultra-wide screens */
+@media (min-width: 2400px) {
+    .container {
+        max-width: 2200px;
+    }
+    
+    /* Prevent elements from getting too spread out */
+    .dashboard-area .row {
+        max-width: 2200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Additional improvements for larger screens */
+@media (min-width: 1400px) {
+    /* Improved button sizing */
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1.05rem;
+    }
+    
+    /* Card spacing */
+    .card-body p {
+        margin-bottom: 0.8rem;
+    }
+    
+    /* Better use of whitespace */
+    .dashboard-area .mb-5 {
+        margin-bottom: 2.5rem !important;
+    }
+}
+
+/* Fix navbar spacing on larger screens */
+@media (min-width: 1400px) {
+    .navbar .container {
+        padding: 0 1.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1.2rem !important;
+    }
+}
