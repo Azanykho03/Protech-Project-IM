@@ -20,10 +20,10 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="contact-info">
                     <a href="tel:+1234567890" class="me-3 text-white text-decoration-none">
-                        <i class="fas fa-phone me-2"></i>+1 234 567 890
+                        <i class="fas fa-phone me-2"></i>+16 917 175 7258
                     </a>
                     <a href="mailto:contact@apcs.com" class="text-white text-decoration-none">
-                        <i class="fas fa-envelope me-2"></i>contact@apcs.com
+                        <i class="fas fa-envelope me-2"></i>airprotechaircon123@gmail.com
                     </a>
                 </div>
                 <div class="social-links">
@@ -58,33 +58,63 @@
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section id="hero" >
-          <section class="hero-section text-white py-5" data-aos="fade-up">
-              <div class="container">
-                  <div class="row align-items-center">
-                      <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="150">
-                          <h1 class="display-4 fw-bold mb-4">Professional Air Conditioning Solutions</h1>
-                          <p class="lead mb-4">Expert installation and maintenance services for your comfort</p>
-                          <a class="btn btn-danger btn-lg" href="/auth">Get Started Now</a>
-                      </div>
-                      <div class="col-md-6"  data-aos="fade-left" data-aos-delay="200">
-                          <img src="/assets/images/ac.png" 
-                              alt="Air Conditioning" 
-                              class="img-fluid rounded shadow">
-                      </div>
-                  </div>
+       <!-- Modified Hero Section with Carousel -->
+<section id="hero">
+  <section class="hero-section text-white py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="150">
+          <h1 class="display-4 fw-bold mb-4">Air-Protech Aircon &<br>Refrigeration Services</h1>
+          <p class="lead mb-4">Expert installation and maintenance services for your comfort</p>
+          <a class="btn btn-danger btn-lg" href="/auth">Get Started Now</a>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <!-- Carousel Implementation -->
+          <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner rounded shadow">
+              <!-- Carousel Item 1 -->
+              <div class="carousel-item active">
+                <img src="/assets/images/carousel-images-file/carousel1.jpg" class="d-block w-100" alt="Air Conditioning System 1">
               </div>
-          </section>
-        </section>
+              <!-- Carousel Item 2 -->
+              <div class="carousel-item">
+                <img src="/assets/images/carousel-images-file/carousel2.jpg" class="d-block w-100" alt="Air Conditioning System 2">
+              </div>
+              <!-- Carousel Item 3 -->
+              <div class="carousel-item">
+                <img src="/assets/images/carousel-images-file/carousel3.jpg" class="d-block w-100" alt="Air Conditioning System 3">
+              </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
 
         <!-- Services Section -->
         <section id="our-services" >
         <section class="services-section py-5 bg-light">
             <div class="container">
               <div class="text-center section-intro"  class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-                 <h6 class="text-primary fw-semibold text-uppercase mb-3">Our Services</h6>
-                 <h2 class="fw-bold mb-3">Comprehensive Air Conditioning Solutions</h2>
+                 <h2 class="fw-bold mb-3">Our Services</h2>
                  <p class="lead text-muted">Delivering professional cooling services tailored to your specific needs</p>
               </div>
               
@@ -92,7 +122,7 @@
                 <!-- Installation -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
                   <div class="card text-center h-100 shadow-sm border-0">
-                    <img src="/api/placeholder/800/500" class="card-img-top" alt="Air Conditioning Installation">
+                    <img src="/assets/images/services-images/installation-services.jpg" class="card-img-top" alt="Air Conditioning Installation">
                     <div class="card-body">
                         <div class="service-icon">
                             <i class="bi bi-tools"></i>
@@ -109,8 +139,8 @@
                 <!-- Maintenance -->
                 <div class="col-md-4"  data-aos="fade-up" data-aos-delay="150">
                   <div class="card text-center h-100 shadow-sm border-0">
-                   <img src="/api/placeholder/800/500" class="card-img-top" alt="AC Maintenance Service">
-                    <div class="card-body">
+                   <img src="/assets/images/services-images/Preventive-Maintenance.png" class="card-img-top" alt="AC Maintenance Service">
+                    <div class="card-body"> 
                     <div class="service-icon">
                             <i class="bi bi-calendar-check"></i>
                         </div>
@@ -126,7 +156,7 @@
                 <!-- Repair -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                   <div class="card text-center h-100 shadow-sm border-0">
-                    <img src="/api/placeholder/800/500" class="card-img-top" alt="AC Repair Services">
+                    <img src="/assets/images/services-images/Repair-Troubleshooting.jpg" class="card-img-top" alt="AC Repair Services">
                     <div class="card-body">
                         <div class="service-icon">
                             <i class="bi bi-wrench"></i>
@@ -154,10 +184,11 @@
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200" >
                   <div class="card product-card shadow-sm border-0 h-100">
-                    <img src="path/to/product1.jpg" class="card-img-top" alt="Smart Inverter AC">
+                    <img src="/assets/images/product-images/D-Smart-Prince.png" class="card-img-top" alt="Smart Inverter AC">
                     <div class="card-body">
-                      <h5 class="fw-bold">Smart Inverter AC</h5>
-                      <p class="text-muted mb-2">Energy-efficient cooling with smart controls</p>
+                      <h5 class="fw-bold">D-Smart Queen Series</h5>
+                      <p class="text-muted mb-2">Energy-efficient cooling with smart controls </p><br>
+                      <p class="text-muted mb-2">SPECIAL PROMO - FROM SRP TO 15% DISCOUNT & FREE INSTALLATION!</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <span class="price text-danger fw-bold">$1,299</span>
                         <a href="/auth" class="btn btn-danger btn-sm">Book Now</a>
@@ -169,10 +200,11 @@
                 <!-- Product 2 -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300" >
                   <div class="card product-card shadow-sm border-0 h-100">
-                    <img src="path/to/product2.jpg" class="card-img-top" alt="Split System Classic">
+                    <img src="/assets/images/product-images/D-smart-king.png" class="card-img-top" alt="Split System Classic">
                     <div class="card-body">
-                      <h5 class="fw-bold">Split System Classic</h5>
-                      <p class="text-muted mb-2">Reliable cooling for any room size</p>
+                      <h5 class="fw-bold">D-Smart King</h5>
+                      <p class="text-muted mb-2">Reliable cooling for any room size</p><br>
+                      <p class="text-muted mb-2">SPECIAL PROMO - FROM SRP TO 15% DISCOUNT & FREE INSTALLATION!</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <span class="price text-danger fw-bold">$899</span>
                         <a href="/auth" class="btn btn-danger btn-sm">Book Now</a>
@@ -184,10 +216,11 @@
                 <!-- Product 3 -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                   <div class="card product-card shadow-sm border-0 h-100">
-                    <img src="path/to/product3.jpg" class="card-img-top" alt="Portable AC Unit">
+                    <img src="/assets/images/product-images/D-smart-series.png" class="card-img-top" alt="Portable AC Unit">
                     <div class="card-body">
-                      <h5 class="fw-bold">Portable AC Unit</h5>
-                      <p class="text-muted mb-2">Flexible cooling solution for any space</p>
+                      <h5 class="fw-bold">D-Smart Series</h5>
+                      <p class="text-muted mb-2">Flexible cooling solution for any space</p><br>
+                      <p class="text-muted mb-2">SPECIAL PROMO - FROM SRP TO 15% DISCOUNT & FREE INSTALLATION!</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <span class="price text-danger fw-bold">$499</span>
                         <a href="/auth" class="btn btn-danger btn-sm">Book Now</a>
@@ -199,10 +232,11 @@
                 <!-- Product 4 -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
                   <div class="card product-card shadow-sm border-0 h-100">
-                    <img src="path/to/product4.jpg" class="card-img-top" alt="Commercial HVAC System">
+                    <img src="/assets/images/product-images/higher-aircon.jpg" class="card-img-top" alt="Commercial HVAC System">
                     <div class="card-body">
                       <h5 class="fw-bold">Commercial HVAC System</h5>
-                      <p class="text-muted mb-2">Professional grade cooling system</p>
+                      <p class="text-muted mb-2">Professional grade cooling system</p><br>
+                      <p class="text-muted mb-2">SPECIAL PROMO - FROM SRP TO 15% DISCOUNT & FREE INSTALLATION!</p>
                       <div class="d-flex justify-content-between align-items-center">
                         <span class="price text-danger fw-bold">$2,499</span>
                         <a href="/auth" class="btn btn-danger btn-sm">Book Now</a>
@@ -344,6 +378,7 @@
     <!-- Smooth scrolling script -->
     <script src="/assets/js/home.js"></script>
 
+  
     <script>
           AOS.init({
             duration: 1000, 

@@ -15,4 +15,10 @@ $router -> map('GET','/services','App\Controllers\ServicesController#services','
 //for user dashboard page
 $router -> map('GET','/user/dashboard','App\Controllers\UserDashBoardController#renderUserDashBoard', 'user_dashboard');
 
+//for user service page
+$router -> map('GET','/user/services','App\Controllers\ServicesController#renderServices', 'user_service');
+
+//for user product page
+$router -> map('GET','/user/product','App\Controllers\ProductController#renderProduct', 'user_product');
+
 ?>

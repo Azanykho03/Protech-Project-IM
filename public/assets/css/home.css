@@ -76,6 +76,95 @@ body {
     align-items: center;
 }
 
+/* Hero Carousel Styles */
+#heroCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#heroCarousel .carousel-item {
+    height: 400px; /* Fixed height for all carousel images */
+}
+
+#heroCarousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#heroCarousel .carousel-indicators {
+    bottom: 10px;
+}
+
+#heroCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 4px;
+}
+
+#heroCarousel .carousel-indicators button.active {
+    background-color: #fff;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+    width: 10%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#heroCarousel:hover .carousel-control-prev,
+#heroCarousel:hover .carousel-control-next {
+    opacity: 0.8;
+}
+
+/* Fade transition for carousel */
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Make hero section background overlay for better text readability */
+.hero-section {
+    background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(13, 22, 62, 0.9)), 
+                url('/assets/images/backgroundhero.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #heroCarousel .carousel-item {
+        height: 300px;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 50px 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    #heroCarousel .carousel-item {
+        height: 500px;
+    }
+    
+    .hero-section {
+        min-height: 70vh;
+    }
+}
+
+
 /* Dashboard Styles */
 .dashboard-area {
     background-color: #f5f7fa;
